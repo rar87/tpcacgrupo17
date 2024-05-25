@@ -1,0 +1,116 @@
+:root{
+ --color-primario:  #00da68;
+ --color-fondo-header: var(--color-primario);
+ --color-texto-header: #383935;
+ --color-verde-body: rgba(7, 133, 26, 0.577);
+ --color-amarillo-body: rgba(6, 164, 192, 0.577);
+ --color-logo-sombra: rgba(241, 245, 129, 0.5);
+ /* --color-verde-body: rgba(6, 97, 113, 0.577);
+ .color1 {color: #00d297;}
+ .color2 {color: #00da68;} 
+ .color3 {color: #9aec62;}
+ .color4 {color: #f4fb7c;}
+ .color5 {color: #fffb92;}
+} */
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(to right,var(--color-verde-body), var(--color-amarillo-body));
+}
+header{
+    background-color: var(--color-fondo-header);
+    color:var(--color-texto-header);
+    text-align:center;
+    font-family: cursive;
+    font-size: 20px;
+    }
+#logo{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 600px;
+    
+}
+header div,
+header nav{
+    display: inline;
+    vertical-align: middle;
+}
+
+
+.hipervin{
+    color: var(--color-texto-header);
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: cursive;
+    
+}
+
+h2{
+    font-family: "Cantora One", sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: rgba(36, 63, 25, 0.764);
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+.card{
+    display: inline-block;
+    background-color: rgba(224, 243, 237, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.6);
+    text-align: center;
+    border-radius: 1%;
+    overflow: hidden;
+}
+.imagen-responsive{
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.contenido{
+    margin: 0 auto;
+    padding: 20px;
+    color: #02170c;
+}
+#p-bloque2{
+    text-align: justify;
+    margin: 10px;
+    font-family:cursive;
+}
+
+#p-bloque3{
+    text-align:justify;
+    margin: 10px;
+    font-family:cursive;
+}
+
+#ol{
+    text-align: center;
+    margin: 10px;
+    font-family:cursive;
+}
+
+footer{
+    background-color: var(--color-fondo-header);
+    color:black;
+    text-align: center;
+    padding: 20px;
+    font-family: cursive;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: "Cantora One", sans-serif; */
+    /* font-weight: 400; */
+    font-style: normal;
+    color:blue;
+    text-align: center;
+    /* padding: 2em; */
+  }

@@ -1,0 +1,43 @@
+:root{
+    --color-primario: #14b76e;
+    --color-fondo-header: var(--color-primario);
+    --color-fondo-body: var(--color-primario);
+    --color-fondo-body: #808080;
+    --color-fondo-body: #800000;
+
+
+
+
+
+
+
+
+
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background: linear-gradient(to right, green, grey);
+}
+header{
+    background: linear-gradient(to right, green, grey);
+    text-align: center;
+    color: black;
+}
+#logo{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+header class,
+header nav
+{
+    display: inline
+}
+nav a{
+    color: black;
+}

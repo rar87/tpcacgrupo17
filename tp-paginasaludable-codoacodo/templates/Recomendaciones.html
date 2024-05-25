@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/recomendaciones.css">
+    <title>recomendaciones</title>
+
+
+</head>
+
+<body>
+    <header>
+        
+
+        <section id="navegacion">
+
+        
+        <nav>
+            <a class="hipervin" href="../index.html">Home</a>
+            <a class="hipervin" href="recetas.html">Recetas</a>
+            <a class="hipervin" href="Habitos_saludables.html">Habitos Saludables</a>
+            
+            <a class="hipervin" href="templates/recomendaciones.html">Recomendaciones</a>
+            <a class="hipervin" href="http://wwwgoogle.com" target="_blank">Google</a>
+          </nav>
+        </section>  
+    </header> 
+       <main>
+        <section id="titulo_mensajes">
+        <div class="mensajes">
+        <h1>
+        Principales mensajes
+        </h1>
+        </div>
+        </section>
+
+        <section id="lista_mensajes">
+
+        <div class="aliniar">
+         <img id="variedad" src="../static/img/maxresdefault.jpg" alt="variedad">
+        </div>
+        <div class="consejos">
+        
+        <p>
+        1- Incorporar a diario alimentos de todos los grupos y realizar al menos 30 minutos de actividad física <br>
+        <br>
+        
+        2- Tomar a diario 8 vasos de agua segura <br>
+        <br>
+        
+        3- Consumir a diario 5 porciones de frutas y verduras en variedad de tipos y colores <br>
+        
+        <br>
+
+        4- Reducir el uso de sal y el consumo de alimentos con alto contenido de sodio <br>
+        <br>
+        
+        5- Limitar el consumo de bebidas azucaradas y de alimentos con elevado contenido de grasas, azúcar y sal <br>
+        <br>
+        
+        6- Consumir diariamente leche, yogur o queso, preferentemente descremados <br>
+        <br>
+        
+        7- Al consumir carnes quitarle la grasa visible, aumentar el consumo de pescado e incluir huevo <br>
+        <br>
+        
+        8- Consumir legumbres, cereales preferentemente integrales, papa, batata, choclo o mandioca <br>
+        
+        <br>
+
+        9- Consumir aceite crudo como condimento, frutas secas o semillas <br>
+        
+        <br>
+        10- El consumo de bebidas alcohólicas debe ser responsable. <br> 
+            Los niños, adolescentes y mujeres embarazadas no deben consumirlas. <br> 
+            Evitarlas siempre al conducir <br>
+        <br>
+
+        </p>
+        </div>
+        </section>
+
+        <section id="invitacion">
+            <div class="invitar">
+        
+        <h2>
+        
+        Estas son recomendaciones en general para mantener una buena alimentacion . <br>
+        
+        Te invitamos a llenar este Formulario para enviarte informacion en forma individual . <br>
+
+        </h2>
+            </div>
+        </section>
+        
+
+
+        <section id="formulario">
+         <div class="titulo_formulario">
+            <h1>Formulario de datos personales</h1>
+         </div>
+
+         <div class="formulario">
+            <hr>
+        
+            <form action="">
+                <div>
+                <label for="nombre">
+                    Nombre:
+                </label>
+    
+                <input type="text" name="nombre" id="nombre" required>
+                </div>
+
+                <br>
+    
+                <div>
+                <label for="apellido">
+                    Apellido:
+                </label>
+    
+                <input type="text" name="apellido" id="apellido"required >
+                </div>
+                <br>
+    
+                <div>
+                    <label for="fn">
+                        Fecha de nacimiento:
+                    </label>
+    
+                    <input type="date" name="fn" id="fn" required>
+                </div>
+                <br>
+    
+                <div>
+                    <label for="edad">
+                        Edad:
+                    </label>
+                    <input type="number" name="edad" id="edad"min=10 max="99">
+                </div>
+                <br>
+    
+                <div>
+                    <label for="genero">Genero</label>
+                    <select name="genero" id="genero">
+                        <option value="f">F</option>
+                        <option value="m">M</option>
+                        <option value="otro">Otro</option>
+    
+                    </select>
+                </div>
+                <br>
+                <div>
+                <label for="mail">
+                    Correo Electronico:
+                </label>
+    
+                <input type="text" name="mail" id="mail" required email>
+                </div>
+                <br>
+    
+                <div>
+                <label for="telefono">
+                    Telefono:
+                </label>
+    
+                <input type="tel" name="tel" id="telefono"required >
+                </div>
+                <br>
+                <hr>
+    
+                <div>
+                    <h2>¿Que tipo de informacion buscas?</h2>
+                    <input type="radio" name="informacion" id="sobrepeso" value="sobrepeso">
+                    <label for="sobrepeso">Sobrepeso</label>
+                    <br>
+                    <input type="radio" name="informacion" id="diabetes" value="diabetes">
+                    <label for="Diabetes">Diabetes</label>
+                    <br>
+                    <input type="radio" name="informacion" id="celiaquia" value="celiaquia">
+                    <label for="celiaquia">Celiaquia</label>
+                    <br>
+                    <input type="radio" name="informacion" id="deportista" value="deportista">
+                    <label for="deportista">Deportista</label>
+                    <br>
+                    <input type="radio" name="informacion" id="dieta-saludable" value="dieta-saludable">
+                    <label for="dieta-saludable">Dieta-Saludable</label>
+                    <br>
+    
+    
+                </div>
+                <hr>
+    
+                <div>
+                    <input type="submit" onclick ='enviarformulario()' value="Enviar">
+                    
+                </div>
+                <br>
+    
+                <div>
+                    <input type="reset" value="Borrar">
+                </div>
+            </form>
+            <div id ="error"></div>
+         </div>
+
+       <footer>
+       <p>Curso codo a codo 2024 fullstack</p>
+    
+       </footer>
+
+       <script src="../static/js/formularioscript.js"></script>
+    
+     
+    
+</body>
+</html>

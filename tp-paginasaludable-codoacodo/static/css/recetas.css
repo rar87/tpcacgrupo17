@@ -1,0 +1,85 @@
+:root{
+    --color-primario: #ff7b00;
+    --color-fondo-header: var(--color-primario);
+    --color-texto-header: hsl(235, 100%, 2%);
+    --color-verde-body: rgb(191, 178, 0);
+    --color-gris-body: rgba(255, 255, 255, 0);
+    --color-logo-sombra: rgba(83,175,236,0.5);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right,var(--color-verde-body) ,var(--color-gris-body),var(--color-verde-body)) ;
+    
+
+    
+}
+header{
+    background-color: var(--color-fondo-header);
+    color:var(--color-texto-header);
+    text-align: center;
+    background: linear-gradient(to right,var(--color-verde-body) ,var(--color-gris-body),var(--color-verde-body)) ;
+   
+    
+   
+
+}
+#logo{
+    width: 80px;
+    height:auto;
+    border-radius: 50%;
+    margin-right: 600px;
+  
+}
+
+header div,
+header nav{
+    display: inline;
+    vertical-align: middle;
+}
+
+   
+.hipervin {
+    color: var(--color-texto-header);
+    text-decoration: none;
+    margin: 0 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+
+}
+.recetas {
+    text-align: center;
+     font-size:  30px; 
+     margin-left: 50px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#variedad{
+    width: 500px;
+    height: auto;
+    padding: 20px;
+}
+.titulo{
+    font-size: 60px;
+    background-image: url("../img/fondo-negro-receta.jpg");
+    color: transparent;
+    background-clip: text;
+    font-family:fantasy;
+
+
+}
+
+ol ,ul {
+    text-align: center;
+    list-style-position: inside;
+}
+footer{
+    background-color: var(--color-fondo-header);
+    color: var(var(--color-texto-header));
+    text-align:center;
+    padding: 10px;
+
+
+}
